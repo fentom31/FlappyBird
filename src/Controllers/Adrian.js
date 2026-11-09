@@ -29,7 +29,7 @@ export default class AdrianController {
      
       }
     if (birdData.y > scene.height - scene.floor - 10) {
-      this.jump(1);
+      this.jump(3);
     }
     
     
