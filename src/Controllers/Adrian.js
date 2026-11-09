@@ -26,10 +26,12 @@ export default class AdrianController {
       else if(birdData.x < pipes[0].x  - 100 && birdData.y > pipes[0].pipeHeight + 120){
         this.jump(1);
       }
-      else if (birdData.y > scene.height - scene.floor - 10) {
-      this.jump(1);
+      
       }
+      if (birdData.y > scene.height - scene.floor - 10) {
+      this.jump(1);
     }
+    
     
     /*
     console.log('birdData.x'+ birdData.x);
