@@ -22,13 +22,13 @@ export default class AdrianController {
     */
     if(pipes[0]!=null){
       if(pipes[0].isTop && birdData.x < pipes[0].x  - 100 && birdData.y > pipes[0].pipeHeight - 120)
-      {}
-      else if(birdData.x < pipes[0].x  - 100 && birdData.y > pipes[0].pipeHeight + 120){
+    
+      if(birdData.x < pipes[0].x  - 100 && birdData.y > pipes[0].pipeHeight + 120){
         this.jump(1);
       }
-      
+     
       }
-      if (birdData.y > scene.height - scene.floor - 10) {
+    if (birdData.y > scene.height - scene.floor - 10) {
       this.jump(1);
     }
     
